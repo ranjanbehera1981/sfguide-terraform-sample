@@ -9,10 +9,6 @@ terraform {
 
 provider "snowflake" {
 role = "SYSADMIN"
-account  = "GS52755"
-username = "tf-snow"
-region   = "us-east-2"
-private_key_path = "C:/Users/ranja/.ssh/snowflake_tf_snow_key.p8"
 }
 
 resource "snowflake_database" "db" {
